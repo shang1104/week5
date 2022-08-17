@@ -1,0 +1,213 @@
+---
+title: Boostrap index
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<main>
+  <div class="container-fluid">
+    <div class="row justify-content-between mb-1">
+      <div class="col-2 d-flex">
+        All (4)
+        <span>
+          <a class="ms-2" href="#">
+            <i class="fa-regular fa-angle-down text-secondary"></i
+          ></a>
+        </span>
+      </div>
+      <div class="col-2">2 comments</div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-4">
+        <ul class="list-group">
+          <li class="list-group-item bg-light">
+            <ul>
+              <li>
+                <ul class="d-flex justify-content-between">
+                  <li class="fs-8 mb-1">Chapter Assignment 2</li>
+                  <li class="fs-8 mb-2">4 hrs ago</li>
+                </ul>
+              </li>
+              <li>
+                <ul class="d-flex justify-content-between">
+                  <li class="fw-bold fs-6">Please check this file…</li>
+                  <li class="fs-8">Emily Wang</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="list-group-item">
+            <ul>
+              <li>
+                <ul class="d-flex justify-content-between">
+                  <li class="fs-8 mb-1">Chapter Assignment 1</li>
+                  <li class="fs-8 mb-2">12 hrs ago</li>
+                </ul>
+              </li>
+              <li>
+                <ul class="d-flex justify-content-between">
+                  <li class="fw-bold fs-6">My Homework</li>
+                  <li class="fs-8">David Xu</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="list-group-item">
+            <ul>
+              <li>
+                <ul class="d-flex justify-content-between">
+                  <li class="fs-8 mb-1">Final Assignment</li>
+                  <li class="fs-8 mb-2">18 hrs ago</li>
+                </ul>
+              </li>
+              <li>
+                <ul class="d-flex justify-content-between">
+                  <li class="fw-bold fs-6">Have a problem with this…</li>
+                  <li class="fs-8">Tony Wei</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="list-group-item">
+            <ul>
+              <li>
+                <ul class="d-flex justify-content-between">
+                  <li class="fs-8 mb-1">Final Assignment</li>
+                  <li class="fs-8 mb-2">19 hrs ago</li>
+                </ul>
+              </li>
+              <li>
+                <ul class="d-flex justify-content-between">
+                  <li class="fw-bold fs-6">Did I do it right?</li>
+                  <li class="fs-8">Christina Lin</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-8">
+        <div class="card">
+          <div
+            class="card-header d-flex justify-content-between align-items-center"
+          >
+            <ul>
+              <li class="fs-8 mb-1">Chapter Assignment 2 / HTML&CSS</li>
+              <li class="fs-6">Please check this file for me, thanks!</li>
+            </ul>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+          <div class="card-body d-flex justify-content-between">
+            <img
+              src="./assets/images/emilywang.jpeg"
+              class="card-img me-2"
+              alt="大頭貼"
+            />
+            <ul class="d-flex flex-column pb-4 border-bottom border-info">
+              <li><h5 class="fs-6 mb-1">Emily Wang</h5></li>
+              <li><p class="card-text fs-8 mb-4">10:38 AM (4 hours ago)</p></li>
+              <li>
+                <p class="card-text me-8 mb-4 fs-7 lh-sm">
+                  Hi Teacher, the attached file is my homework of chapter 2. And
+                  here comes a question: Why in the following code the height of
+                  the <a class="text-secondary" href="#">div</a> is bigger than
+                  the height of the <a class="text-secondary" href="#">img</a>?
+                  There is a gap below the image, but it doesn’t seems to be a
+                  padding/margin.<br />
+                  What is the gap or extra space below image?
+                </p>
+              </li>
+              <a
+                class="card-download d-flex bg-light border border-info justify-content-center align-items-center"
+                href="#"
+                ><span class="material-symbols-outlined">attach_file</span
+                >HW-2-David.zip</a
+              >
+            </ul>
+          </div>
+
+          <div class="card-body d-flex justify-content-between">
+            <img
+              src="./assets/images/emir.jpeg"
+              class="card-img me-2"
+              alt="大頭貼"
+            />
+            <ul class="card-title d-flex flex-column">
+              <li class="d-flex justify-content-between">
+                <ul class="d-flex flex-column">
+                  <li><h5 class="card-title fs-6 mb-1">Andy Chen (You)</h5></li>
+                  <li>
+                    <p class="card-text fs-8 mb-4">13:24 AM (1 hours ago)</p>
+                  </li>
+                </ul>
+                <ul class="d-flex justify-content-between">
+                  <li>
+                    <a href="#"><i class="fa-regular fa-star me-6"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-pen me-8"></i></a>
+                  </li>
+                </ul>
+              </li>
+              <ul>
+                <li>
+                  <p class="card-text me-8 mb-4 fs-7 lh-sm">
+                    Hi David, by default, an image is rendered inline, like a
+                    letter so it sits on the same line that a, b, c and d sit
+                    on. There is space below that line for the descenders you
+                    find on letters like g, j, p and q. <br /><br />You can:
+                    　<br /><br />&emsp;• adjust the
+                    <a class="text-secondary" href="#">vertical-align</a
+                    >&emsp;of the image to position it elsewhere <br />(e.g. the
+                    <a class="text-secondary" href="#">middle</a> le &emsp;)
+                    or<br />&emsp;• change the
+                    <a class="text-secondary" href="#">display</a>&emsp;so it
+                    isn’t inline.
+                  </p>
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-end">
+      <div class="col-8">
+        <ul class="d-flex justify-content-between mt-4">
+          <li class="d-flex justify-content-between">
+            <ul class="d-flex justify-content-between">
+              <li class="me-6">
+                <a href="#"
+                  ><span class="material-symbols-outlined"
+                    >chevron_left</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <span class="material-symbols-outlined">chevron_right</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="d-flex justify-content-between">
+              <li class="me-4">
+                <button type="button" class="btn btn-outline-secondary">
+                  Mark as read
+                </button>
+              </li>
+              <li>
+                <button type="button" class="btn btn-secondary">Reply</button>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>
